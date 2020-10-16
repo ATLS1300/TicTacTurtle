@@ -17,7 +17,7 @@ In this repository you have:
 * startCode.py - the final form of start code we'll be using for the class! It has in place the setup required for key and click interactions, and animation. You should use this for both *board.py* and *player.py*
 * img2gif.py - this is code that will convert ANY FILE into a .gif file. This is the **only** filetype that is compatible with turtle. 
 **To use this code -** download it into the same folder that has the image you want to convert. Run the code and follow the prompts that show up in the **command line console**. 
-**In this code:**
-* RESIZE - means to change the size AND proportions of the image. You will eventually be prompted to provide the size of the image in pixels. (Good for sizing images for a tile or player image.) You can distort your image this way.
-* SCALE - means to change ONLY the size, but keep the proportions of the image. You'll have to enter a fraction by which to scale. (Good for resizing for background.)
+<br>***In this code:***
+* **RESIZE** - means to change the size AND proportions of the image. You will eventually be prompted to provide the size of the image in pixels. (Good for sizing images for a tile or player image.) You can distort your image this way.
+* **SCALE** - means to change ONLY the size, but keep the proportions of the image. You'll have to enter a fraction by which to scale. (Good for resizing for background.)
 * If you get an error, READ THE TEXT THOROUGHLY. (You likely didn't have the img2gif.py file and the image file in the same folder.)
