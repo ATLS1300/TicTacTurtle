@@ -14,7 +14,7 @@ We'll be building a tic tac toe (or connect-4) game over the next 3 weeks.
   
 
 In this repository you have:
-* startCode.py - the final form of start code we'll be using for the class! It has in place the setup required for key and click interactions, and animation. You should use this for both *board.py* and *player.py*
+* GM_StartCode.py - Sets up organization for your game manager class, and guides how to incorporate Board and Player classes.
 * img2gif.py - this is code that will convert ANY FILE into a .gif file. This is the **only** filetype that is compatible with turtle. 
 **To use this code -** download it into the same folder that has the image you want to convert. Run the code and follow the prompts that show up in the **command line console**. 
 <br>***In this code:***
