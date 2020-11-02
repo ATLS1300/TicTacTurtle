@@ -4,6 +4,8 @@
 Created on Sat Oct 24 09:42:27 2020
 
 @author: Dr. Z - modified from https://stackoverflow.com/questions/39922967/python-determine-tic-tac-toe-winner
+
+
 """
 import numpy as np
 
@@ -48,20 +50,20 @@ def checkWin(scoreBoard):
     return checkDiagonals(scoreBoard)
 
 
-
+# Uncomment everything below to test this code.
 # Add values into this list of lists to see the different outcomes
-a = [['', '', ''], # 'X','X','X'
-     ['', '', ''],
-     ['', '', '']]
+# a = [['', '', ''], # 'X','X','X'
+#      ['', '', ''],
+#      ['', '', '']]
 
 
-# You'll write something like this for your end game scenario
-if checkWin(a)=='X':
-    print('X won!')
-elif checkWin(a)=='O':
-    print('O won!')
-elif checkWin(a)=='':
-    print(checkWin(a))
-    print('Empty!')
-elif checkWin(a)==0: 
-    print('Stalemate!')
+# # You'll write something like this for your end game scenario
+# if checkWin(a)=='X':
+#     print('X won!')
+# elif checkWin(a)=='O':
+#     print('O won!')
+# elif checkWin(a)=='':
+#     print(checkWin(a))
+#     print('Empty!')
+# elif checkWin(a)==0: 
+#     print('Stalemate!')
