@@ -15,6 +15,7 @@ import checkWin
     
 # Global variables
 numside = 3 # number of spaces per side of the board
+empty = [] # I'll use an empty list to indicate an UNPLAYED position on the board
 
 def makeBoardList(numside=3,empty=[]):
     '''Makes an empty scoreboard for tictactoe, based on the number of sides.
@@ -60,9 +61,32 @@ print(boardList[0],'\n',
 
 # Now lets check to see if there's a winner
 WINNER = checkWin.checkWin(boardList)
+
+#==============================================================
+#                        STOP! READ!
+# You want to check for a winner all the time, but a STALEMATE
+# only happens when teh board is FULL. So we'll check for winners
+# but if we get a stalemate, we'll also check to see that the board
+# is full!
+#==============================================================
+
+gameOver = False # some variable to tell if my game is over. 
+# USE THIS TO DRAW YOUR GAMEOVER SCREEN (if you're doing that)
+
 if type(WINNER) == str:
     print(WINNER + ' is the winner!')
+    gameOver = True # we have a winner, so the game is done.
+    
 else:
-    print("It's a draw! No winner! \n",
-          '\n',
-          "Play again?")
+    for row in boardList:
+        if empty in row:
+            # are there any values equal to our "empty space" value?? 
+            # if so, gameOver isn't happening!
+            gameOver = False
+        else: 
+            gameOver = True
+    if gameOver:
+        print("It's a draw! No winner! \n",
+                  '\n',
+                  "Play again?")
+            
