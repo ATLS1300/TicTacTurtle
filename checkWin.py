@@ -23,7 +23,7 @@ def checkRows(scoreBoard):
     If the entire row is the same, it returns the value found across the whole row.
     If the entire row is NOT the same, it returns 0.'''
     for row in scoreBoard:
-        if len(set(row)) == 1:
+        if len(set(row)) == 1 and set(row) != {''}:
             return row[0]
     return 0 # you may want to change this value! (this is the "no-3-in-a-row" "value)
 
@@ -46,7 +46,10 @@ def checkWin(scoreBoard):
     for newBoard in [scoreBoard, np.transpose(scoreBoard)]:
         result = checkRows(newBoard)
         if result:
-            return result
+            if type(result)==np.str:
+                return(str(result))
+            else:
+                return result
     return checkDiagonals(scoreBoard)
 
 
@@ -66,4 +69,5 @@ def checkWin(scoreBoard):
 #     print(checkWin(a))
 #     print('Empty!')
 # elif checkWin(a)==0: 
+
 #     print('Stalemate!')
