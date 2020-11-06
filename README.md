@@ -1,5 +1,6 @@
-# TicTacTurtle
-# This repository will update regularly! So check back!
+# TicTacTurtle - Final submission
+# Submit your file as PC09_final.py
+
 Start code and example code for tic tac turtle! Submit all 3 parts to this repository!
 
 We'll be building a tic tac toe (or connect-4) game over the next 3 weeks. 
